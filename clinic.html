@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script type="module" src="script/clinic.js"></script>
+  </head>
+  <body>
+    <h1 id="header" class="mb-5 text-center fw-bold signin-header"> Clinic Center</h1>
+    <div class="container mt-5">
+        <div class="row">
+            <p id="hallo-user" class="fw-bold">Hallo Alfian</p>
+            <p><a id="linkLogout" href="http://127.0.0.1:5500/signin.html">Logout</a></p>
+            <p><a id="link" href="http://127.0.0.1:5500/clinic.html">Booking Clinic</a></p>
+            <p><a id="link" href="http://127.0.0.1:5500/booking.html">List Bookingan</a></p>
+            <p><a id="link" href="http://127.0.0.1:5500/profile.html">Profile</a></p>
+        </div><hr>
+        <!----------------- FORM ----------------------->
+        <form id="form">
+          <h3 class="fw-bold mt-5 mb-5">Booking Test Klinik Pilihan Anda</h3>
+          <!------ Klinik dan Tes ------>
+          <div class="row">
+              <div class="form-group mt-4 col-sm-5">
+                <label for="clinic" class="col-form-label">Pilih Klinik</label>
+                  <select id="clinic" class="form-control" name="clinic">
+                    <option></option>
+                  </select>
+              </div>
+              <!------ Jenis Tes ------>
+              <div class="form-group col-sm-5 mt-4">
+                <label for="jenis-test" class="col-sm-4 col-form-label">Jenis Tes</label>
+                  <select id="jenis-test" class="form-control" name="jenis-test" disabled>
+                  </select>
+              </div>
+          </div>
+          <div class="row">
+            <!------ Tanggal ------>
+            <div class="form-group mt-4 col-sm-5">
+                <div><label for="tanggal" class="col-form-label">Tanggal</label></div>
+                <input class="form-control" id="tanggal" type="date" name="tanggal" disabled> 
+            </div>
+            <!------ Jam kunjungan ------>
+            <div class="form-group mt-4 col-sm-5">
+                <label for="time" class="col-form-label">Waktu Kunjungan</label>
+                  <select id="time" class="form-control" name="time" disabled>
+                  </select>
+            </div>
+          </div>
+          <button id="tombol-submit" type="button" class="btn btn-lg btn-outline-primary col-sm-2 mt-5">Pesan</button>
+          <!-- <button id="tombol-2" type="reset" class="btn btn-lg btn-outline-primary col-sm-2 mt-5">Reset</button> -->
+      </form>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    
+  </body>
+</html>
+
+
+<!-- <form action="http://127.0.0.1:3000/api/user" method="GET" id="form"> -->
+<!-- <script type="module"> -->
+      <!-- // import Cookies from '/node_modules/js-cookie/dist/js.cookie.mjs'
+      // const link = document.getElementById("link")
+      // const firstName = document.getElementById("firstName")
+      // const lastName = document.getElementById("lastName")
+      // const email = document.getElementById("email")
+      // const user = Cookies.get('user')
+      // const userParse = JSON.parse(user)
+      // console.log(userParse);
+      // const cookie = Cookies.get('status')
+      // if (cookie == "isLogin"){
+      //   firstName.value = userParse.firstName
+      //   lastName.value = userParse.lastName
+      //   email.value = userParse.email
+      //   // address.value = userParse.address
+      //   link.textContent = "Logout"
+      //   link.addEventListener("click",()=>{
+      //     Cookies.remove('status')
+      //     Cookies.remove('user')
+      //   })
+      // }else button.textContent = "Login" -->
+    <!-- </script> -->

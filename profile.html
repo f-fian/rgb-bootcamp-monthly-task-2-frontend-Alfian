@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 id="header" class="mb-5 text-center fw-bold signin-header"> Clinic Center Bunda Ceria</h1>
+    <div class="container mt-5">
+        <div class="row">
+            <p id="hallo-user" class="fw-bold">Hallo Alfian</p>
+            <p><a id="linkLogout" href="http://127.0.0.1:5500/signin.html">Logout</a></p>
+            <p><a id="link" href="http://127.0.0.1:5500/clinic.html">Booking Clinic</a></p>
+            <p><a id="link" href="http://127.0.0.1:5500/booking.html">List Bookingan</a></p>
+            <p><a id="link" href="http://127.0.0.1:5500/profile.html">Profile</a></p>
+        </div><hr>
+        <!----------------- FORM ----------------------->
+        <form id="form">
+          <h4 class="fw-bold mt-5 mb-5">Edit Profile</h4>
+          <div class="form-group col-sm-10">
+            <label for="NIK">NIK &nbsp;(Nomer Induk Kependudukan)</label>
+            <input type="number" id="NIK" class="form-control mb-4 mt-2" placeholder="NIK" name="NIK">
+          </div> 
+          <div class="form-group col-sm-10">
+            <label for="fullName">Nama Lengkap</label>
+            <input type="text" id="fullName" class="form-control mb-4 mt-2" placeholder="Nama Lengkap" name="fullName">
+          </div>
+          <div class="form-group col-sm-10">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control mb-4 mt-2" placeholder="Example@gmail.com" name="email">
+          </div>
+          <div class="form-group col-sm-10">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" class="form-control mb-4 mt-2" placeholder="Example@gmail.com" name="phone">
+          </div>
+          <div class="form-group col-sm-10">
+            <label for="birthDate">Tanggal Lahir</label>
+            <input type="date" id="birthDate" class="form-control mb-4 mt-2" name="birthDate">
+          </div>
+          <div class="form-group col-sm-10">
+            <label for="address">Alamat Lengkap</label>
+            <input type="text" id="address" class="form-control mb-4 mt-2" name="address">
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <label for="password">Password*</label>
+              <input type="password" id="password" class="form-control mb-4 mt-2" name="password">
+            </div>
+            <div class="col-sm-5">
+              <label for="confirmPassword">Confirm Password*</label>
+              <input type="password" id="confirmPassword" class="form-control mb-4 mt-2" name="confirmPassword">
+            </div>
+            
+          </div>
+          
+        
+          
+          <button id="tombolSubmit" type="button" class="btn btn-lg btn-outline-primary col-sm-2 mt-5">Klik OKe</button>
+          <!-- <button id="tombol-2" type="reset" class="btn btn-lg btn-outline-primary col-sm-2 mt-5">Reset</button> -->
+      </form>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <script type="module" src="script/profile.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form action="http://127.0.0.1:3000/api/user" method="GET" id="form"> -->
+<!-- <script type="module"> -->
+      <!-- // import Cookies from '/node_modules/js-cookie/dist/js.cookie.mjs'
+      // const link = document.getElementById("link")
+      // const firstName = document.getElementById("firstName")
+      // const lastName = document.getElementById("lastName")
+      // const email = document.getElementById("email")
+      // const user = Cookies.get('user')
+      // const userParse = JSON.parse(user)
+      // console.log(userParse);
+      // const cookie = Cookies.get('status')
+      // if (cookie == "isLogin"){
+      //   firstName.value = userParse.firstName
+      //   lastName.value = userParse.lastName
+      //   email.value = userParse.email
+      //   // address.value = userParse.address
+      //   link.textContent = "Logout"
+      //   link.addEventListener("click",()=>{
+      //     Cookies.remove('status')
+      //     Cookies.remove('user')
+      //   })
+      // }else button.textContent = "Login" -->
+    <!-- </script> -->
